@@ -1,0 +1,34 @@
+Day 3
+-----
+    1. Bubble sort.
+	
+	[93, 63, 61, 60, 86, 70, 6, 47, 31, 53]
+	
+	[ 63, 93, 60, 61, 70, 86, 6, 47, 31, 53]
+
+	Till now  we created threads using objects of the Thread class, 
+	
+		tObj = Thread(target=..., args = ...)
+		
+		
+	Now we will see how to create a class which inherits Thread class 
+
+	
+		read varValue
+			perform operation
+			then assign
+			
+		
+		data+=1
+		
+		---> data = data + 1
+		
+		
+		Message Passing Interface
+			mpi4py ---> 
+				pip install 
+			one window:
+				mpi package for window from microsoft 
+		
+		PASL 
+		

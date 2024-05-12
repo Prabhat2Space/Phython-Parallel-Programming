@@ -1,0 +1,31 @@
+Revision on Parallel Programming:
+=================================
+	Parallel Computing , parallel processing or multi-processing is to enable or perform multiple tasks/programs to run simultaneously on multiple processors.
+	
+	What we tend to do is by splitting a single task  into multiple, independant smaller or sub-tasks. Where each sub-tasks is nothing but set of instructions which can run simultaneously on different processors 
+	
+	
+	From your shell(Bash) point of view....
+		
+		0001 --> 1
+		0011 --> 3 --> #1 and #2 
+		0100 --> 4  
+		0111 1111 --> 127
+		1111 1111 --> 255
+		15 -->1111 -->#1, #2, #3 and #4
+		--cpu-lists 0-7
+		
+		 for more info refer to manual page of taskset command
+			man taskset 
+================================================================
+			
+			
+			
+			
+			
+		
+		
+		
+		
+		
+		

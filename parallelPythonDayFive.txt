@@ -1,0 +1,83 @@
+MPI --> 
+	Open MPI Project is an open source project for Message Passing Interface implementation. 
+		This project is developed and maintained by an consortium(group) of academic, research and industry partners. 
+		It is for High Performance Computing (HPC)
+		
+		Python program that we use mpi4py module has to run using MPI interpreter which is provided with mpirun command. In some systems(OS) instead of mpirun we may have to use mpiexec command 
+
+	1. Simple hello world ... using mpi4py 
+	2. differiation each process based on rank 
+	3. simple send/recv data between two processes 
+
+
+	Next is 
+		Broad casting...
+			Broadcasting is sending one data(exact copy) to all processes on the communicator... 
+			
+		scatter
+			takes a range of  data and sends distributes the data accross different ranks 
+
+		gather.. is opposit to scatter.
+			Which takes subset of an array that are distributed accross the ranks and gathers them into a full array
+			
+	PASL --> parsl 		
+		Parsl is a Python native library that allows to write and execute parallel functions, bring together dependencies.
+
+		Parsl wraps Python functions as applications/apps which can be used as decoarators 
+			for example
+				@functionName --> decoarator in python 
+				
+				@python_app 
+				def fun():
+					pass 	
+				wraps the fun as Python app ..
+				
+				@bash_app 
+				def fun():
+					pass 	
+				wraps the fun as bash(Bourne Again Shell) app ..
+		
+Before getting on with further examples....
+===========================================
+	let us revise some basics...
+		in Python 
+		in Bash 
+			what is a shell?
+				---> Shell is said to be a command interpreter
+				When you are working or interacting with OS..
+					there are two interfaces ...
+						GUI --> Graphical User Interface 
+						CLI --> Command Line Interface
+							in windows --> command prompt 
+							in UNIX/Linux --> shell 
+							
+				When interacting with shell ...
+					input  --> standard Input file/device --> 0
+					output --> standard output file/device --> 1
+					error --> standard error file/device --> 2
+			in C 
+				stdin, stdout, stderr 
+			in C++
+				cin, cout, cerr 	
+			in Python 
+				from sys import stdin, stdout,stderr
+			
+			that is by default 
+				all input is from keyboard (stdin), 
+				all output is to console (stdout),
+				all errors is to console (stderr),
+			IO Redirection...
+			================
+				< --> input /read from file 
+				> --> output / write into a file (overwrite)
+				>> --> output / append into a file 
+				
+		With this i will stop discussion on Parallel Programming in Python.
+===================================
+
+
+
+
+
+
+

@@ -1,0 +1,159 @@
+Python(Program) file...
+	consist of functions, classes and variables(Data)
+	
+	if these functions, classes and data from one python file has to be used in another python file, here the one to be used is referred to as a module.
+	
+	Every Python file is a module which can be used in other python program files by using import statements.
+	
+	In simple terms, we can consider a module to be same as a code library or a file containing functions(classes/data) that you want to include in your program/application/app 
+
+	
+	Different ways of using import statement:
+	1. 	import moduleIntro 
+	2.  from moduleIntro import * 
+	3.  from moduleIntro import funOne,dataOne
+	4.  import moduleIntro as mi 
+	
+	collection of modules (Python files) is a package (folder)
+	Different ways of using import statement:
+	
+	1. import myPkg.moduleIntro
+	2. import myPkg.moduleIntro as mp 
+	3. from myPkg.moduleIntro import *
+	4. from myPkg.moduleIntro import funOne,dataOne
+	
+	5. from myPkg import moduleIntro
+    6. from myPkg import moduleIntro as mi	
+================================================================
+	Module : multiprocessing 
+		This module gives/provides/supports process based parallelism 
+		
+		
+		Pool class in Multiprocess...
+			Pool is a collection of multiple process ....
+			
+			rather than creating objects (of Process) and then starting and then joining ...
+			
+			We can avoid all those things here using the Pool class 
+			
+			
+		map function ---> have you come accross this function in Python 
+		  map() maps a function to an iterator...
+			any thing which is a collection or which can be used in a loop , such objects are called iteratable objects 
+			
+		  map(fun, [1,2,3,4,6,5])
+			---> this is what map will do. i.e, fun() is called for each value in the list 
+		  
+		  Pool class provides its own map() so to enable maping of data to the child(new) processes ... collect the result of each processes and return the list of results of all child processes. 
+		  
+		Each process 
+
+			main 
+			  
+			   Process Object 
+			   pObj.start()
+		  
+			Since each process has its own resources.. like, ids(pid, ppid, uid, euid, gid, egid).. files opened, data ...
+			If more than one process wants to work with other processes to achieve, there should be some mode of communications 
+			In UNIX/Linux environment, we call them IPC (Inter Process Communication)
+				There are different modes of IPC 
+					1. pipes 
+						named
+						unnamed 
+					2. signals  (software interrupts)
+					3. Sys V IPC
+						--> message queues
+						--> shared memory 
+						--> Semaphores 
+					4. POSIX IPC
+						--> message queues
+						--> shared memory 
+						--> Semaphores 
+					5. Memory mapping 
+					6. File Locking 
+					7. Sockets 
+			
+			Python multiprocessing module provides some channels 
+				like Queue class, Pipe class 
+				
+			Let us see a simple program using Queue as an IPC
+
+			
+				
+				
+				
+		
+					
+					
+					
+					
+				
+			
+			
+			
+			
+			
+			
+			
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+			
+			
+			
+			
+			
+		  
+		  
+		
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+		
+	
+	

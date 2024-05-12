@@ -1,0 +1,102 @@
+ls -l | more -5 
+
+ls -l --> command#1 --> process #1
+	---> writes into the pipe (|)
+more -5 --> command#2 --> process #2
+    ---> takes/read from the pipe(|)
+	
+	In multiprocess module, there is class called Pipe
+			--> send(data to the pipe) --> performs write operation
+			--> recv(data from the pipe) --> performs read operation
+			
+	Introduction to Multithreading in Python:
+    =========================================
+			Yesterday we discussed on multiprocessing...
+			=============================================
+			Within individual process, you can have multiple execution of control flow. This is basically dividing the process into multiple sub-tasks which can be executed concurrently.
+			In other words, Multithreading is a programming technique that allows you to run multiple threads(control flow/tasks) simultaneusly.
+			
+			People talk...
+			==============
+				Your programs achieve some tasks ...
+					----> we look at these task from your program utilization of your computer resources.
+					among the various resource ...
+							---> CPU 
+							---> I/O-->Console, DiskIO, NetworkIO
+						
+				Multithreading can be used to improve the performance, of your application because it allows to take advantage of the multiple cores in your CPU 
+
+				Python Multithreading library is loosely built on the concepts of threads provided by Java.
+
+	Multi-programming 
+		more than one program/process running simultaneously in single core machine 
+	Multi-processing 
+		more than one program/process running simultaneously in multi core machine 
+	Multithreading
+		Within each program/process, you can have multiple execution of control flow. This is basically dividing the process into multiple sub-tasks which can be executed concurrently. that is why threads are also referred to as LWP(Light Weight Process)
+		
+		What is GIL? ---> 
+			Global Interpreter Lock...
+			  Python Interpreter establishes a lock on the code it interprets so that it interprets one code at a time. Because of this the integrity of your Python Interpreter is maintained.
+			  
+			  GIL is a mutex (Mutually Exclusive) lock that prevents multiple threads from executing Python bytecode at once.
+			  
+			  This ensures Python data structures are not corrupted by multiplethreads simultaneously accessing and modifying them.
+			  
+			-------------------------
+			Lot of people argue that this puts limitation on multi-threaded code execution in Python.
+
+	module name is threading 
+	
+	from threading import Thread 
+	
+	
+	
+	
+	
+			
+			
+			
+			
+			
+			
+
+			
+			
+			  
+			  
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		
+	
+	
+
+
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			
+			
+			
+			
+			
+			
+			
+	
